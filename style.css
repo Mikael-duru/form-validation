@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  transition: all .5s ease;
+}
+
+body {
+  background-color: #f0f0f3;
+  font-family: 'Lato', sans-serif;
+  display: grid;
+  place-content: center;
+  margin: auto;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  /* max-width: 460px; */
+  width: 100%;
+  padding: 1.8rem;
+  background-color: #f0f0f3;
+  border-radius: 15px;
+  box-shadow: -6px -6px 13px #fff, 6px 6px 13px rgba(0, 0, 0, .16);
+}
+
+.title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.2rem;
+  padding-top: 1.2rem;
+  padding-bottom: 2rem;
+}
+
+.formControl {
+  position: relative;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.formControl label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.formControl input {
+  width: 100%;
+  padding: 1.1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #f0f0f3;
+  box-shadow: inset -6px -6px 13px #fff, inset 6px 6px 13px rgba(0, 0, 0, .16);
+  font-size: 1.2rem;
+  color: #212121;
+}
+
+.formControl input:focus {
+  background-color: #e3ecf6;
+}
+
+.formControl i {
+  position: absolute;
+  top: 53px;
+  right: 16px;
+  font-size: 1.3rem;
+  visibility: hidden;
+}
+
+.formControl small {
+  position: absolute;
+  bottom: 0;
+  left: 2px;
+  visibility: hidden;
+}
+
+/* correct input indication style */
+.formControl.success .fa-check-circle {
+  display: block;
+  color: green;
+  visibility: visible;
+}
+
+/* wrong or empty input indication style */
+.formControl.error .fa-exclamation-circle {
+  display: block;
+  color: red;
+  visibility: visible;
+}
+
+.formControl.error small {
+  color: red;
+  visibility: visible;
+}
+
+.submitBtn {
+  width: 100%;
+  line-height: 50px;
+  font-size: 1.2rem;
+  font-family: inherit;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+  border: none;
+  border-radius: 15px;
+  background-color: #f0f0f3;
+  box-shadow: -6px -6px 13px #fff, 6px 6px 13px rgba(0, 0, 0, .16);
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  transform: scale(.96);
+}
+
+.foot_note {
+  font-size: 14px;
+  text-align: center;
+  padding-top: 2rem;
+}
